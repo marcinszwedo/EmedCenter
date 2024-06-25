@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+</br>
+<h5>Twoje zamówienia:</h5>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Pacjent</th>
+        <th scope="col">Lekarz</th>
+        <th scope="col">Data zamówienia</th>
+    </tr>
+    </thead>
+    {% for order in order_list %}
+    <tbody>
+    <tr>
+        <td>{{ order.patient }}</td>
+        <td>{{ order.doctor }}</td>
+        <td>{{ order.order_date }}</td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+</br>
+<h5>Twoje zamówienia:</h5>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Data zamówienia</th>
+        <th scope="col">Pacjent</th>
+        <th scope="col">Lekarz</th>
+        <th scope="col">Lek</th>
+        <th scope="col">Dawka</th>
+        <th scope="col">Ilość</th>
+        <!--        Testowo do wyrzucenia  -->
+        <th scope="col">Zatwierdzone</th>
+        <!--        Testowo do wyrzucenia  -->
+        <th scope="col">Zatwierdzone</th>
+    </tr>
+    </thead>
+    {% for order_ in order_list %}
+    <tbody>
+    <tr>
+        <td>{{ order_.order.order_date }}</td>
+        <td>{{ order_.order.patient.first_name }} {{ order_.order.patient.last_name }}</td>
+        <td>{{ order_.order.doctor.first_name }} {{ order_.order.doctor.last_name }}</td>
+        <td>{{ order_.lek.name }} </td>
+        <td>{{ order_.lek.dose }} </td>
+        <td>{{ order_.quantity }} </td>
+        <!--        Testowo do wyrzucenia  -->
+        <td>{{ order_.order.approved }} </td>
+        <!--        Testowo do wyrzucenia  -->
+        <td> <a href="{% url 'order-update' pk=order_.order.pk %}">Klik</a> </td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}

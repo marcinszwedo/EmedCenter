@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+</br>
+<h5>Leki:</h5>
+<table class="table table-striped">
+    <tr>
+        <th>Nazwa</th>
+        <th>Producent</th>
+        <th>Dawka</th>
+        <th>Ilość w opakowaniu</th>
+    </tr>
+    {% for medicament in medicament_list %}
+    <tr>
+        <th>{{ medicament.name }}</th>
+        <th>{{ medicament.manufacturer }}</th>
+        <th>{{ medicament.dose }}</th>
+        <th>{{ medicament.quantity_in_package }}</th>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

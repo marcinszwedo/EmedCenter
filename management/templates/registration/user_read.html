@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+</br>
+<h5>Twoje zamówienia:</h5>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Imię</th>
+        <th scope="col">Nazwisko</th>
+        <th scope="col">PESEL</th>
+        <th scope="col">Status</th>
+        <th scope="col">Edytuj</th>
+    </tr>
+    </thead>
+    {% for user in to_approved %}
+    <tbody>
+    <tr>
+        <td>{{ user.first_name }}</td>
+        <td>{{ user.last_name }}</td>
+        <td>{{ user.pesel }}</td>
+        {% if not user.approved %}
+        <td>Nie zatwierdzony</td>
+        {% else %}
+        <td>Zatwierdzony</td>
+        {% endif %}
+        <td> <a href="{% url 'user-approve' pk=user.pk %}">Klik</a> </td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div>
+    <h1>Add Order</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+            {{ form.quantity }}
+            {{ form.medicament }}
+        </div>
+        <fieldset>
+            <legend>Medicament</legend>
+            {{ form }}
+            {{ medicament.non_form_errors }}
+            {% for form in medicament %}
+            {{ form.id }}
+
+                {{ form.name.errors }}
+                {{ form.name.label_tag }}
+                {{ form.name }}
+
+            {% endfor %}
+        </fieldset>
+        <fieldset>
+            <legend>Recipe instruction</legend>
+            {{ order.management_form }}
+            {{ order.non_form_errors }}
+            {% for form in order %}
+            {{ form.id }}
+            <div class="inline {{ order.prefix }}">
+                {{ form.number.errors }}
+                {{ form.number.label_tag }}
+                {{ form.number }}
+                {{ form.description.errors }}
+                {{ form.description.label_tag }}
+                {{ form.description }}
+            </div>
+            {% endfor %}
+        </fieldset>
+        <input type="submit" value="Add recipe" class="submit" />
+    </form>
+</div>
+
+{% endblock %}

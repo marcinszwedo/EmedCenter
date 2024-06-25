@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+</br>
+</br>
+</br>
+<div class="col-md-6 offset-md-3">
+    {% if user.is_authenticated %}
+    <h3>Witamy {{ user.first_name }}.</h3>
+    <br/>
+    <p>Na naszej stronie możesz zamówić leki.</p>
+    {% else %}
+    <br/>
+    <h3>Witamy na stronie Emed</h3>
+    <br/>
+    <p>Na naszej stronie możesz zamówić leki.</p>
+    <p>Aby korzystać z tych możliwości musisz się zalogować. Jeżeli nie posiadasz konta załóż je.</p>
+    {% endif %}
+    <br/>
+</div>
+{% endblock %}
