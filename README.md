@@ -72,8 +72,8 @@ How it's working:
 
 1. Clone the repo
    ```sh
-   $ git clone https://github.com/gocardless/sample-django-app.git
-   $ cd sample-django-app
+   $ git clone https://github.com/marcinszwedo/EmedCenter.git
+   $ cd emed
    ```
 2. Create a virtual environment to install dependencies in and activate it:
    ```sh
@@ -85,6 +85,13 @@ How it's working:
    (env)$ pip install -r requirements.txt
    ```
    Note the (env) in front of the prompt. This indicates that this terminal session operates in a virtual environment set up by virtualenv2.
+4. Migrate project
+   ```sh
+   (env)$ python manage.py migrate
+   (env)$ python manage.py runserver
+   ```
+5. Go to the web browser and enter <a href="http://127.0.0.1:8000/"> to verify whether the application is running fine or not.
+ 
 
 
 
@@ -132,3 +139,5 @@ Project Link: [https://github.com/marcinszwedo/EmedCenter](https://github.com/ma
 [Bootstrap-url]: https://getbootstrap.com
 [Django.com]: https://img.shields.io/badge/DJANGO-%23092E20?style=for-the-badge&logo=django
 [Django-url]: https://www.djangoproject.com/
+[Django-server]: http://127.0.0.1:8000/
+
