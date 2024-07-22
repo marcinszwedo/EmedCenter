@@ -85,12 +85,12 @@ How it's working:
    (env)$ pip install -r requirements.txt
    ```
    Note the (env) in front of the prompt. This indicates that this terminal session operates in a virtual environment set up by virtualenv2.
-4. Migrate project
+4. Make migrations and run the server
    ```sh
    (env)$ python manage.py migrate
    (env)$ python manage.py runserver
    ```
-5. Go to the web browser and enter <a href="http://127.0.0.1:8000/"> to verify whether the application is running fine or not.
+5. Go to the web browser and enter <a href="[Django-server]">http://127.0.0.1:8000/</a> to verify whether the application is running fine or not.
  
 
 
@@ -100,9 +100,28 @@ How it's working:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+There are four access levels:
+  1. Patient
+  - signing up (the account must be verified by the nurse/receptionist)
+  - ordering medicines (account must be verified)
+  - viewing order history
+  - changing user data (not all)
+  2. Nurse/receptionist:
+  - verifying user accounts and assigning doctors to them
+  - adding medicine to the database
+  - assigning doctors
+  3. Doctor:
+  - view orders only from his patients
+  - accepting orders for medicines
+  4. Admin:
+  - all access
 
+Screenshots
+1. Signup
+   <a href="[Django-server]">http://127.0.0.1:8000/accounts/user_create/>http://127.0.0.1:8000/accounts/user_create/</a>
 
+2. Signup
+   <a href="[Django-server]">http://127.0.0.1:8000/accounts/user_create/>http://127.0.0.1:8000/accounts/user_create/</a>
 
 
 
@@ -134,6 +153,9 @@ Project Link: [https://github.com/marcinszwedo/EmedCenter](https://github.com/ma
 [license-url]: https://github.com/marcinszwedo/EmedCenter/LICENSE.txt 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcin-szwedo
+[product-screenshot]: emed/images/screenshot.PNG
+[signup-screenshot]: emed/images/screenshot.PNG
+[order-screenshot]: emed/images/screenshot.PNG
 [product-screenshot]: emed/images/screenshot.PNG
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
