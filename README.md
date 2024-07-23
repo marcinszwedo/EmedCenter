@@ -119,16 +119,11 @@ There are four access levels:
 Screenshots
 1. Signup
    <a href="http://127.0.0.1:8000/accounts/user_create/">http://127.0.0.1:8000/accounts/user_create/
-   <div align="center">
-    <img src="emed/images/signup.png" alt="Signup">
-   </div>
-  
-2. Order
-   <a href="http://127.0.0.1:8000/order_details/order_details_create_new/">http://127.0.0.1:8000/order_details/order_details_create_new/
-   <div align="center">
-    <img src="emed/images/order view.png" alt="Signup">
-   </div>
+![signup-screenshot]
 
+2. Order
+   <a href="http://127.0.0.1:8000/order_details/order_details_create_new/">http://127.0.0.1:8000/order_details/order_details_create_new/</a>
+![order-screenshot]
 
 
 <!-- LICENSE -->
@@ -158,9 +153,8 @@ Project Link: [https://github.com/marcinszwedo/EmedCenter](https://github.com/ma
 [license-url]: https://github.com/marcinszwedo/EmedCenter/LICENSE.txt 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcin-szwedo
-[product-screenshot]: emed/images/screenshot.PNG
-[signup-screenshot]: emed/images/screenshot.PNG
-[order-screenshot]: emed/images/screenshot.PNG
+[signup-screenshot]: emed/images/signup.PNG
+[order-screenshot]: emed/images/order%20view.PNG
 [product-screenshot]: emed/images/screenshot.PNG
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
