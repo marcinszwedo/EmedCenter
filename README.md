@@ -137,20 +137,20 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [Marcin Szwedo](www.linkedin.com/in/marcin-szwedo)
+Your Name - [Marcin Szwedo][linkedin-url]
 
 Project Link: [https://github.com/marcinszwedo/EmedCenter](https://github.com/marcinszwedo/EmedCenter)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[forks-shield]: https://img.shields.io/github/forks/marcinszwedo/EmedCenter.git?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/marcinszwedo/EmedCenter?style=for-the-badge&label=FORKS
 [forks-url]: https://github.com/marcinszwedo/EmedCenter/forks
-[stars-shield]: https://img.shields.io/github/stars/marcinszwedo/EmedCenter.git?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/marcinszwedo/EmedCenter?style=for-the-badge&label=STARS
 [stars-url]: https://github.com/marcinszwedo/EmedCenter/stargazers
-[license-shield]: https://img.shields.io/github/license/marcinszwedo/EmedCenter.git?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/marcinszwedo/EmedCenter?style=for-the-badge&label=LICENSE
 <!-- edit -->
-[license-url]: https://github.com/marcinszwedo/EmedCenter/LICENSE.txt 
+[license-url]: https://github.com/marcinszwedo/EmedCenter/blob/main/LICENSE.txt 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcin-szwedo
 [signup-screenshot]: emed/images/signup.PNG
