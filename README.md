@@ -118,11 +118,16 @@ There are four access levels:
 
 Screenshots
 1. Signup
-   <a href="[Django-server]">http://127.0.0.1:8000/accounts/user_create/>http://127.0.0.1:8000/accounts/user_create/</a>
-
-2. Signup
-   <a href="[Django-server]">http://127.0.0.1:8000/accounts/user_create/>http://127.0.0.1:8000/accounts/user_create/</a>
-
+   <a href="http://127.0.0.1:8000/accounts/user_create/">http://127.0.0.1:8000/accounts/user_create/</a>
+   <div align="center">
+    <img src="emed/images/emed.png" alt="Signup" width="260" height="80">
+   </div>
+  
+2. Order
+   <a href="http://127.0.0.1:8000/order_details/order_details_create_new/">http://127.0.0.1:8000/order_details/order_details_create_new/</a>
+   <div align="center">
+    <img src="emed/images/emed.png" alt="Signup" width="260" height="80">
+   </div>
 
 
 
