@@ -9,7 +9,7 @@
 <br />
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/marcinszwedo/EmedCenter.git">
     <img src="emed/images/emed.png" alt="Logo" width="260" height="80">
   </a>
 
@@ -118,15 +118,15 @@ There are four access levels:
 
 Screenshots
 1. Signup
-   <a href="http://127.0.0.1:8000/accounts/user_create/">http://127.0.0.1:8000/accounts/user_create/</a>
+   <a href="http://127.0.0.1:8000/accounts/user_create/">http://127.0.0.1:8000/accounts/user_create/
    <div align="center">
-    <img src="emed/images/emed.png" alt="Signup" width="260" height="80">
+    <img src="emed/images/signup.png" alt="Signup">
    </div>
   
 2. Order
-   <a href="http://127.0.0.1:8000/order_details/order_details_create_new/">http://127.0.0.1:8000/order_details/order_details_create_new/</a>
+   <a href="http://127.0.0.1:8000/order_details/order_details_create_new/">http://127.0.0.1:8000/order_details/order_details_create_new/
    <div align="center">
-    <img src="emed/images/emed.png" alt="Signup" width="260" height="80">
+    <img src="emed/images/order view.png" alt="Signup">
    </div>
 
 
